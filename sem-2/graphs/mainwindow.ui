@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1845</width>
+    <height>826</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1845</width>
+    <height>826</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1845</width>
+    <height>826</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Graphs</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #EAE7DC</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>1280</width>
+      <height>550</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1280</width>
+      <height>550</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FFF;</string>
+    </property>
+    <property name="sceneRect">
+     <rectf>
+      <x>0.000000000000000</x>
+      <y>0.000000000000000</y>
+      <width>1261.000000000000000</width>
+      <height>548.000000000000000</height>
+     </rectf>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_Node_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1440</x>
+      <y>30</y>
+      <width>211</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+              margin: 5px;
+              padding: 8px 15px;
+              border-radius: 12px;
+              border: 1px solid rgba(0,0,0,0.15);
+              background-color: #9381FF;
+              font-size:18px;
+}
+QPushButton::hover {
+               background-color: #B8B8FF
+}</string>
+    </property>
+    <property name="text">
+     <string>Add point</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_Edge_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>140</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+              margin: 5px;
+              padding: 8px 15px;
+              border-radius: 12px;
+              border: 1px solid rgba(0,0,0,0.15);
+              background-color: #9381FF;
+              font-size:18px;
+}
+QPushButton::hover {
+               background-color: #B8B8FF
+}</string>
+    </property>
+    <property name="text">
+     <string>Add line</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="Output_algoritms">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>730</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FFF;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>520</y>
+      <width>501</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="Width_traversal_Btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+              margin: 5px;
+              padding: 8px 15px;
+              border-radius: 12px;
+              border: 1px solid rgba(0,0,0,0.15);
+              background-color: #9381FF;
+              font-size:18px;
+}
+QPushButton::hover {
+               background-color: #B8B8FF
+}</string>
+       </property>
+       <property name="text">
+        <string>Width</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>From</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="Wide_lineEdit">
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="Deep_crawl_Btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+              margin: 5px;
+              padding: 8px 15px;
+              border-radius: 12px;
+              border: 1px solid rgba(0,0,0,0.15);
+              background-color: #9381FF;
+              font-size:18px;
+}
+QPushButton::hover {
+               background-color: #B8B8FF
+}</string>
+       </property>
+       <property name="text">
+        <string>Deep</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>From</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="Deep_lineEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="Dijkstra_Btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+              margin: 5px;
+              padding: 8px 15px;
+              border-radius: 12px;
+              border: 1px solid rgba(0,0,0,0.15);
+              background-color: #9381FF;
+              font-size:18px;
+}
+QPushButton::hover {
+               background-color: #B8B8FF
+}</string>
+       </property>
+       <property name="text">
+        <string>Dijkstra's algorithm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>From</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2" colspan="2">
+      <widget class="QLineEdit" name="Dijkstra_start_lineEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>To</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLineEdit" name="Dijkstra_end_lineEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>220</y>
+      <width>421</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+       <property name="text">
+        <string>From</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+       <property name="text">
+        <string>To</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+       <property name="text">
+        <string>Size</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="Output_lineEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="Input_lineEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="weight_lineEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFF;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1845</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
